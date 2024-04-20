@@ -1,0 +1,23 @@
+<% include ./partials/header.ejs %>
+
+  <div class="w-full h-screen flex items-center justify-center" style="background-image: url('https://images.unsplash.com/photo-1712503781501-b84310c0fec7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); background-size: cover; background-position: center; height: 100vh; display: flex; align-items: center; justify-content: center;">
+    <div class="w-[26vw] bg-white px-16 py-10 rounded-[17px]">
+      <h1 class="text-[27px] text-center tracking-tight capitalize font-semibold text-zinc-700 leading-none">Welcome to Pinterest</h1>
+      <form action="/login" method="post">
+        <div class="mb-3 mt-4">
+          <label for="username" class="block text-gray-700">Username</label>
+          <input id="username" class="border-2 rounded-[12px] block mt-2 w-full px-3 py-2" type="text" name="username" placeholder="Username">
+        </div>
+        <div class="mb-[2px]">
+          <label for="password" class="block text-gray-700">Password</label>
+          <input id="password" class="border-2 rounded-[12px] block mt-2 w-full px-3 py-2" type="password" name="password" placeholder="Password">
+        </div>
+        <a href="" class="mt-[3px] font-semibold text-zinc-500 inline-block ml-2 text-sm">Forgot your password?</a>
+        <input class="border-2 rounded-[12px] block mt-3 w-full px-3 py-2 bg-red-600 text-white rounded-[30px]" type="submit" value="Log in">
+      </form>
+      <p class="text-xs text-zinc-500 mt-6 w2/3 mx-auto text-center">By continuing, you agree to Pinterest's <span class="bold">Terms of Service</span> and acknowledge that you've read our <span class="bold">Privacy Policy. Notice at collection.</span></p>
+      <hr class="my-2 w-2/3 mx-auto text-center border-t border-zinc-300"><a href="/register" class="inline-block mt-3 text-sm font-semibold text-zinc-700 text-center w-full hover:text-red-500">Not on Pinterest yet? Sign up</a>
+    </div>
+  </div>
+
+<% include ./partials/footer.ejs %>
